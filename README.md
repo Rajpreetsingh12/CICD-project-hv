@@ -27,6 +27,12 @@ This project provides a simple CI/CD pipeline to automatically deploy changes fr
     ```bash
     python GitAutoDeployer.py
     ```
+5. Run the `GitAutoDeployer.py` script in a cron job to check for commits every minute:
+
+    ```bash
+    crontab -e
+    * * * * * python3 <project_folder>/GitAutoDeployer.py
+    ```
 
 ## Usage
 
