@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-rootfolder = os.path.join(os.environ['HOME'], "CI_CD_project")
+rootfolder = os.path.dirname(os.path.abspath(__file__))
 project_folder = os.path.join(rootfolder, "project")
 deployment_log = os.path.join(rootfolder, "deployment.log")
 
